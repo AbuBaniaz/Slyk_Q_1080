@@ -2,7 +2,7 @@
 	<!-- DefaultServicesScanner -->
 	<!-- exact same screen as servicescan - (manual scan) -->
 	<!-- /lib/python/Plugins/SystemPlugins/DefaultServicesScanner/plugin.py -->
-	<screen name="DefaultServiceScan" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
+<screen name="DefaultServiceScan" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="ServiceScan"/>
 	</screen>
 	<screen name="HdmiCECSetupScreen" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
@@ -49,7 +49,7 @@
 		</widget>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="518,384" size="978,623" zPosition="1"/>
 		<widget name="config" textOffset="15,0" position="518,385" size="978,624" font="Regular;33" secondfont="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2-978.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="VideoEnhancementSetup" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder" zPosition="4">
 		<panel name="Setup-Default"/>
@@ -85,7 +85,7 @@
 			
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="InfoButton-pos2"/>
 		<panel name="MenuButton"/>
 	</screen>
@@ -110,7 +110,7 @@
 				"scrollbarMode": "showNever"
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="HelpButton"/>
 		<widget source="status" render="Label" position="540,140" size="1002,195" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
 	</screen>
@@ -130,7 +130,7 @@
 				"scrollbarMode": "showNever"
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<widget source="status" render="Label" position="540,140" size="1002,195" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
 	</screen>
 	<!-- software management - install extensions - help button -->
@@ -148,7 +148,7 @@
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,701" zPosition="1"/>
 		<widget name="list" position="540,385" size="1002,697" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" font="Regular;33" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="2"/>
 		<panel name="introduction"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- software management - advanced - advancedrestore -->
 	<screen name="RestoreMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid" title="Advanced Restore">
@@ -156,7 +156,7 @@
 		<widget source="summary_description" render="Label" position="540,140" size="1002,195" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
 		<widget name="filelist" textOffset="15,18" position="540,385" size="1002,624" font="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- /lib/python/Plugins/SystemPlugins/SoftwareManager/plugin.py-->
 	<!-- Infopanel - Software Manager Screens- show default backup files -->
@@ -166,7 +166,7 @@
 		<widget source="summary_description" render="Label" position="540,140" size="1002,195" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
 		<widget name="checkList" position="540,385" size="1002,624" font="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- software management - advanced options -packet management -->
 	<screen name="PacketManager" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
@@ -184,7 +184,7 @@
 				"scrollbarMode": "showNever"
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="ShowUpdatePackages" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder" title="New Packages">
 		<panel name="PacketManager"/>
@@ -194,7 +194,7 @@
 		<panel name="template1"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
 		<widget name="filelist" textOffset="15,18" position="540,385" size="1002,624" font="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- software management - advanced options - select upgrade source  - edit -->
 	<screen name="IPKGSource" position="center,center" size="1620,150">
@@ -218,7 +218,7 @@
 				}</convert>
 		</widget>
 		<panel name="introduction"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- software management - install extensions - view details -->
 	<screen name="PluginDetails" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
@@ -227,7 +227,7 @@
 		<widget source="author" render="Label" position="518,385" size="978,45" font="Regular;33" foregroundColor="white" backgroundColor="mid" transparent="1"/>
 		<widget name="detailtext" position="518,475" size="978,585" font="Regular;33" foregroundColor="white" backgroundColor="mid" transparent="1"/>
 		<widget name="screenshot" position="1516,384" size="320,444" alphatest="blend" zPosition="5"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- infopanel - software manager - software update - progress -->
 	<screen name="UpdatePlugin" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
@@ -240,12 +240,6 @@
 		<widget source="package" render="Label" position="center,805" size="1920,72" font="Regular;33" foregroundColor="white" backgroundColor="blackglass" valign="center" halign="center" noWrap="1" transparent="1"/>
 		<widget source="status" render="Label" position="center,877" size="1920,72" font="Regular;33" foregroundColor="white" backgroundColor="blackglass" valign="center" halign="center" noWrap="1" transparent="1"/>
 		<widget name="slider" position="308,949" size="1305,9" foregroundColor="#44c1fb" backgroundColor="progress-bg" borderWidth="1" borderColor="#555555" zPosition="3" transparent="0"/>
-	</screen>
-	<!-- openvix only - about - software update  -->
-	<screen name="SoftwareUpdateChoices" position="center,center" size="900,720" flags="wfNoBorder" backgroundColor="messageboxbg">
-		<widget name="list" position="0,0" size="900,468" itemHeight="78" font="Regular;33" foregroundColor="white" backgroundColor="messageboxbg" foregroundColorSelected="white" backgroundColorSelected="select-darkblue-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
-		<widget name="text" position="0,500" size="900,156" font="Regular;33" foregroundColor="white" backgroundColor="messageboxbg" valign="center" halign="center" transparent="1"/>
-		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(78)</applet>
 	</screen>
 	<!-- crossepg -->
 	<screen name="downloader-template">
@@ -262,7 +256,7 @@
 		<panel name="template1"/>
 		<ePixmap pixmap="q-backgrounds/385boxflare.png" alphatest="blend" position="507,373" size="999,602" zPosition="1"/>
 		<widget name="about" position="540,401" size="930,545" foregroundColor="white" backgroundColor="mid" font="Regular;33" transparent="1" zPosition="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="downloader" position="0,0" size="1920,1080" title="Message" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="downloader-template"/>
@@ -302,7 +296,7 @@
 		<widget name="channels_count" position="540,785" size="930,630" foregroundColor="white" backgroundColor="mid" font="Regular;27" transparent="1" zPosition="1"/>
 		<widget name="events_count" position="540,833" size="930,630" foregroundColor="white" backgroundColor="mid" font="Regular;27" transparent="1" zPosition="1"/>
 		<widget name="hashes_count" position="540,881" size="930,630" foregroundColor="white" backgroundColor="mid" font="Regular;27" transparent="1" zPosition="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="CrossEPG_Menu" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="template1"/>
@@ -332,7 +326,7 @@
 					"scrollbarMode": "showNever"
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="CrossEPG_Ordering" position="0,0" size="1920,1080" title="Console" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="CrossEPG_Providers"/>
@@ -378,7 +372,7 @@
 				}</convert>
 		</widget>
 		<widget name="pleasewait" position="540,385" size="1002,624" font="Regular;33" foregroundColor="white" backgroundColor="topmid" halign="center" valign="center" transparent="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="AutoBouquetsMaker_HideSections" position="0,0" size="1920,1080" title="AutoBouquetsMaker Hide sections" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
@@ -393,7 +387,7 @@
 					"itemHeight": 78
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="AutoBouquetsMaker_KeepBouquets" position="0,0" size="1920,1080" title="AutoBouquetsMaker Keep bouquets" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
@@ -408,19 +402,19 @@
 					"itemHeight": 78
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="AutoBouquetsMaker_Log" position="0,0" size="1920,1080" title="AutoBouquetsMaker Log" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
 		<eLabel position="490,0" size="1430,1080" backgroundColor="black" transparent="0" zPosition="-1"/>
 		<widget name="list" position="540,62" size="1335,956" font="Console;18" foregroundColor="white" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="AutoBouquetsMaker_About" position="0,0" size="1920,1080" title="AutoBouquetsMaker - About" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
 		<ePixmap pixmap="q-backgrounds/385boxflare.png" alphatest="blend" position="507,373" size="999,602" zPosition="1"/>
 		<widget name="about" position="540,401" size="930,545" foregroundColor="white" backgroundColor="mid" font="Regular;33" transparent="1" zPosition="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="AutoBouquetsMaker" position="0,0" size="1920,1080" title="Message" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="downloader-template"/>
@@ -437,7 +431,7 @@
 		<widget name="slide" position="555,251" size="972,9" zPosition="2" foregroundColor="#44c1fb" backgroundColor="progress-bg" borderWidth="1" borderColor="#555555"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
 		<widget name="config" textOffset="15,0" position="540,385" size="1002,624" font="Regular;33" secondfont="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="CacheFlushAutoScreen" position="54,783" size="540,270" flags="wfNoBorder">
 		<eLabel position="0,0" size="540,270" backgroundColor="blackglass" transparent="0" zPosition="-1"/>
@@ -451,7 +445,7 @@
 		<widget name="rmemtext" position="1050,140" size="210,855" font="Regular;27" valign="top" halign="left" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
 		<widget name="rmemvalue" position="1275,140" size="150,855" font="Regular;27" valign="top" halign="left" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
 		<ePixmap position="960,122" size="3,840" pixmap="div-v.png" alphatest="blend" transparent="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- imdb -->
 	<screen name="IMDB" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder" zPosition="4">
@@ -467,7 +461,7 @@
 		<widget name="stars" position="1497,42" size="315,32" pixmap="icons/starsbar_filled.png" transparent="1" alphatest="blend"/>
 		<ePixmap position="525,869" size="1307,6" pixmap="div-h.png" alphatest="blend" transparent="1"/>
 		<widget name="statusbar" position="540,885" size="1277,90" font="Regular;24" backgroundColor="mid" foregroundColor="bluetext" halign="left" valign="top" transparent="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="MenuButton"/>
 	</screen>
 	<!-- ##permanent clock## -->
@@ -517,12 +511,12 @@
 				}</convert>
 		</widget>
 		<widget name="introduction" position="540,140" size="1002,195" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="filtersServicesSelection" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid" title="Ignore services list">
 		<panel name="template1"/>
 		<panel name="ListTemplate"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="EPGImportProfile" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="Setup-Default"/>
@@ -531,7 +525,7 @@
 		<panel name="template1"/>
 		<eLabel position="491,0" size="1430,1025" backgroundColor="black" transparent="0" zPosition="-1"/>
 		<widget name="list" position="540,42" size="1335,980" font="Console;24" foregroundColor="white" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- ##CutListEditor## -->
 	<!-- /lib/python/Plugins/Extensions/CutListEditor/ui.py -->
@@ -558,7 +552,7 @@
 				 "itemHeight": 78
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- ##GraphMultiEPG## -->
 	<!-- same as GraphicalEPGPIG -->
@@ -577,7 +571,7 @@
 		<widget name="filelist" position="540,385" size="1002,624" font="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
 		<widget name="thn" position="1516,385" size="320,320" alphatest="blend" transparent="1" zPosition="5"/>
 		<widget source="label" render="Label" position="1516,705" size="320,38" font="Regular;27" foregroundColor="white" backgroundColor="mid" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="MenuButton"/>
 	</screen>
 	<screen name="Pic_Exif" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder" zPosition="4">
@@ -592,7 +586,7 @@
 				"itemHeight": 78
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!--Volume Adjust-->
 	<screen name="EPGRefreshServiceEditor" title="Edit Services to refresh" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
@@ -626,7 +620,7 @@
 		</widget>
 		<widget name="label1" position="540,140" size="1002,40" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
 		<widget name="label2" position="540,180" size="1002,40" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="OMBManagerInstall" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="template1"/>
@@ -635,7 +629,7 @@
 			<convert type="StringList"/>
 		</widget>
 		<widget name="info" position="540,140" size="1002,195" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="OMBManagerPreferences" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="Setup-Default"/>
@@ -643,7 +637,7 @@
 	<screen name="OMBManagerAbout" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
 		<widget name="about" position="540,401" size="930,545" foregroundColor="white" backgroundColor="mid" font="Regular;33" transparent="1" zPosition="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="Multiboot" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="Setup-Default"/>
@@ -666,7 +660,7 @@
 		<widget name="frontend" pixmap="icons/scan-c.png" position="560,165" size="96,96" alphatest="blend"/>
 		<widget name="scan_state" position="540,306" size="1002,42" font="Regular;33" foregroundColor="white" backgroundColor="mid" transparent="1"/>
 		<widget name="scan_progress" position="540,355" size="1002,9" foregroundColor="#44c1fb" backgroundColor="progress-bg" borderWidth="1" borderColor="#555555" zPosition="3" transparent="0"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- no idea where this is used -->
 	<screen name="Subtitles" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1">

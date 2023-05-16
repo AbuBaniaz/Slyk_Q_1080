@@ -77,7 +77,7 @@
 		<widget name="blue" position="45,0" size="255,38" font="Regular;33" valign="center" halign="left" transparent="1" foregroundColor="white" backgroundColor="button-bg" noWrap="1" objectTypes="blue,Button,Label"/>
 		<widget source="key_blue" render="Label" position="45,0" size="255,38" font="Regular;33" valign="center" halign="left" transparent="1" foregroundColor="white" backgroundColor="button-bg" noWrap="1" objectTypes="key_blue,StaticText"/>
 	</screen>
-	<screen name="New-Buttons-T1">
+	<screen name="New-Buttons">
 		<panel name="button-bg"/>
 		<panel position="512,1030" size="0,38">
 			<panel name="Red-New-Button"/>

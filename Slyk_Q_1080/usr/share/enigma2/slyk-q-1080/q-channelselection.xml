@@ -105,7 +105,7 @@
 		<widget source="ServiceEvent" render="Label" position="102,813" size="340,243" font="Regular;24" foregroundColor="white" backgroundColor="botright" valign="top" transparent="1" zPosition="4">
 			<convert type="EventName">ThirdDescription</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="MenuButton"/>
 		<panel name="InfoButton-pos2"/>
 	</screen>
@@ -196,7 +196,7 @@
 		<widget source="ServiceEvent" render="Label" position="1518,813" size="362,243" font="Regular;24" foregroundColor="white" backgroundColor="botright" valign="top" transparent="1" zPosition="4">
 			<convert type="EventName">ThirdDescription</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="MenuButton"/>
 		<panel name="InfoButton-pos2"/>
 	</screen>
@@ -257,7 +257,7 @@
 		<widget source="ServiceEvent" render="Label" position="102,813" size="340,243" font="Regular;24" foregroundColor="white" backgroundColor="botright" valign="top" transparent="1" zPosition="4">
 			<convert type="EventName">ThirdDescription</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="MenuButton"/>
 		<panel name="InfoButton-pos2"/>
 	</screen>

@@ -24,7 +24,6 @@
 	<include filename="q-infobar.xml"/>
 	<include filename="q-plugins.xml"/>
 	<include filename="q-network.xml"/>
-
 	<include filename="q-picons.xml"/>
 	<!-- fonts -->
 	<fonts>
@@ -142,28 +141,38 @@
 		<color name="WindowTitleBackground" color="skytitlebackground"/>
 	</windowstyle>
 	<parameters>
-		<parameter name="AutotimerEnabledIcon" value="15,6,38,36"/><!-- Autotimer tick box -->
-		<parameter name="AutotimerRecordIcon" value="68,9,30,30"/><!-- Autotimer Record Icon -->
-		<parameter name="ChoicelistVerticalAlignment" value="*top" />
+		<parameter name="AutotimerEnabledIcon" value="15,6,38,36"/>
+		<!-- Autotimer tick box -->
+		<parameter name="AutotimerRecordIcon" value="68,9,30,30"/>
+		<!-- Autotimer Record Icon -->
+		<parameter name="ChoicelistVerticalAlignment" value="*top"/>
 		<parameter name="ChoicelistDash" value="0,3,1002,78"/>
 		<parameter name="ChoicelistNameSingle" value="68,20,919,78"/>
 		<parameter name="ChoicelistName" value="68,20,919,78"/>
 		<parameter name="ChoicelistIcon" value="15,20,38,38"/>
-		<parameter name="ConfigListSeperator" value="501"/><!-- example is LocationBox -->
+		<parameter name="ConfigListSeperator" value="501"/>
+		<!-- example is LocationBox -->
 		<parameter name="FileListIcon" value="15,21,38,36"/>
 		<parameter name="FileListName" value="68,20,895,78"/>
 		<parameter name="FileListMultiLock" value="15,21,38,36"/>
 		<parameter name="FileListMultiIcon" value="68,24,30,30"/>
 		<parameter name="FileListMultiName" value="111,20,852,78"/>
-		<parameter name="HelpMenuListHlp" value="15,0,1050,78"/><!-- help menu text -->
+		<parameter name="HelpMenuListHlp" value="15,0,1050,78"/>
+		<!-- help menu text -->
 		<parameter name="HelpMenuListExtHlp0" value="15,6,1050,45"/>
 		<parameter name="HelpMenuListExtHlp1" value="0,50,1050,39"/>
-		<parameter name="PluginBrowserIcon" value="15,11,150,60"/><!-- plugins main icon -->
-		<parameter name="PluginBrowserName" value="180,5,45"/><!-- plugins name -->
-		<parameter name="PluginBrowserDescr" value="180,42,30"/><!-- plugins description -->
-		<parameter name="PluginBrowserDownloadIcon" value="15,0,90,83"/><!-- plugins + - boxed icon -->
-		<parameter name="PluginBrowserDownloadName" value="120,5,45"/><!-- plugins download name - see font alias PluginBrowser0 -->
-		<parameter name="PluginBrowserDownloadDescr" value="120,42,30"/><!-- plugins download description -see font alias PluginBrowser1 -->
+		<parameter name="PluginBrowserIcon" value="15,11,150,60"/>
+		<!-- plugins main icon -->
+		<parameter name="PluginBrowserName" value="180,5,45"/>
+		<!-- plugins name -->
+		<parameter name="PluginBrowserDescr" value="180,42,30"/>
+		<!-- plugins description -->
+		<parameter name="PluginBrowserDownloadIcon" value="15,0,90,83"/>
+		<!-- plugins + - boxed icon -->
+		<parameter name="PluginBrowserDownloadName" value="120,5,45"/>
+		<!-- plugins download name - see font alias PluginBrowser0 -->
+		<parameter name="PluginBrowserDownloadDescr" value="120,42,30"/>
+		<!-- plugins download description -see font alias PluginBrowser1 -->
 		<!-- information - services -->
 		<parameter name="ServiceInfo" value="0,0,1002,45"/>
 		<parameter name="ServiceInfoLeft" value="0,0,375,45"/>

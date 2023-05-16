@@ -14,7 +14,7 @@
 		<ePixmap pixmap="div-v.png" alphatest="blend" position="1166,307" size="3,702" zPosition="1"/>
 		<widget name="sublist" position="1194,307" size="600,702" font="Regular;33" foregroundColor="white" backgroundColor="midright" foregroundColorSelected="white" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2-600.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
 		<panel name="description"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<applet type="onLayoutFinish">from enigma import eListboxPythonMultiContent, gFont
 self["list"].instance.setItemHeight(78)
 self["list"].l.setFont(0, gFont("Regular", 30))
@@ -48,7 +48,7 @@ self["sublist"].l.setFont(1, gFont("Regular", 24))</applet>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,160" zPosition="1"/>
 		<widget name="config" textOffset="15,0" position="540,385" size="1002,156" selectionPixmap="q-selectbars/q-menu-2.png" foregroundColor="white" backgroundColor="mid" foregroundColorSelected="white" backgroundColorSelected="select-lightblue-bg" itemHeight="78" font="Regular;33" secondfont="Regular;33" transparent="1" enableWrapAround="1" zPosition="2" scrollbarMode="showNever"/>
 		<widget name="ecminfo" position="555,555" size="972,450" font="Regular;33" foregroundColor="white" backgroundColor="mid" valign="top" transparent="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- ##SoftwarePanel## -->
 	<!-- /lib/python/Plugins/Extensions/Infopanel/SoftwarePanel.py -->

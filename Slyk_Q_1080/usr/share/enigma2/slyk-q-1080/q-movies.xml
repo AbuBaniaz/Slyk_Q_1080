@@ -62,7 +62,7 @@
 		<widget name="movie_sort" position="100,1030" size="53,30" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="blend"/>
 		<widget name="movie_off" position="152,1030" size="53,30" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="blend"/>
 		<widget name="list" position="518,385" size="1374,624" font="Regular;27" foregroundColor="white" backgroundColor="mid" foregroundColorSelected="white" backgroundColorSelected="select-darkblue-bg" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="2"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<ePixmap pixmap="buttons/key_info.png" position="1740,1030" size="38,38" transparent="1" alphatest="blend" zPosition="3"/>
 		<ePixmap pixmap="buttons/key_menu.png" position="1793,1030" size="38,38" transparent="1" alphatest="blend" zPosition="3"/>
 		<ePixmap pixmap="buttons/key_help.png" position="1845,1030" size="38,38" transparent="1" alphatest="blend" zPosition="3"/>

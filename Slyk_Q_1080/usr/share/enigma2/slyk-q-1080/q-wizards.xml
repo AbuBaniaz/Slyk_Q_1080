@@ -18,7 +18,7 @@
 				"itemHeight": 78
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="RemoteControlTemplate"/>
 	</screen>
 	
@@ -98,7 +98,7 @@
 				"itemHeight": 78
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="RemoteControlTemplate"/>
 	</screen>
 </skin>

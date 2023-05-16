@@ -15,7 +15,7 @@
 				}</convert>
 		</widget>
 		<panel name="introduction"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="OKButton"/>
 	</screen>
 	<!-- Nameserver settings -->
@@ -46,7 +46,7 @@
 		<widget source="Gateway" render="Label" position="1041,855" size="501,45" font="Regular;33" foregroundColor="white" backgroundColor="mid" valign="center" halign="right" transparent="1" zPosition="1"/>
 		<widget source="Adaptertext" render="Label" position="540,900" size="501,45" font="Regular;33" foregroundColor="white" backgroundColor="mid" valign="center" transparent="1" zPosition="1"/>
 		<widget source="Adapter" render="Label" position="1041,900" size="501,45" font="Regular;33" foregroundColor="white" backgroundColor="mid" valign="center" halign="right" transparent="1" zPosition="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- system - network - device setup -->
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
@@ -57,7 +57,7 @@
 		<ePixmap pixmap="q-backgrounds/side-2-box.png" alphatest="blend" position="1515,384" size="324,160" zPosition="1"/>
 		<widget source="Statustext" render="Label" position="1568,385" size="269,78" font="Regular;33" foregroundColor="white" backgroundColor="midright" valign="center" halign="left" transparent="1"/>
 		<widget name="statuspic" position="1530,413" size="23,24" pixmaps="buttons/button_green.png,buttons/button_red.png" alphatest="blend" transparent="1" zPosition="10"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- system - network - device setup - network test -->
 	<screen name="NetworkAdapterTest" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid" title="Network test...">
@@ -85,7 +85,7 @@
 		<widget name="DNSInfo_Check" position="1185,738" size="38,36" pixmap="icons/lock_on.png" alphatest="blend" zPosition="2" transparent="1"/>
 		<widget name="DNSInfo_Text" position="1260,715" size="240,83" font="Regular;33" foregroundColors="#bbbbbb,#3ab7fe,#1cff1c" backgroundColor="mid" halign="right" valign="center" transparent="1" zPosition="2"/>
 		<widget name="EditSettings_Text" position="1260,798" size="240,83" font="Regular;33" foregroundColors="#ffffff,#ffffff,#1cff1c" backgroundColor="mid" halign="right" valign="center" zPosition="2" transparent="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- system - network - mounts setup  -->
 	<screen name="NetworkMountsMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid" title="Network Mounts Menu">
@@ -93,7 +93,7 @@
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,701" zPosition="1"/>
 		<widget name="menulist" textOffset="15,20" position="540,385" size="1002,697" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" font="Regular;33" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="2"/>
 		<panel name="introduction"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="NetworkAfp" position="0,0" size="1920,1080" title="AFP Setup" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
@@ -103,7 +103,7 @@
 		<widget name="lab2" position="555,212" size="486,60" font="Regular;33" foregroundColor="white" backgroundColor="mid" valign="center" transparent="1"/>
 		<widget name="labstop" position="1041,212" size="486,60" font="Regular;33" backgroundColor="mid" valign="center" halign="right" transparent="1" zPosition="1"/>
 		<widget name="labrun" position="1041,212" size="486,60" font="Regular;33" backgroundColor="mid" valign="center" halign="right" transparent="1" zPosition="2"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="NetworkSABnzbd" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="NetworkAfp"/>
@@ -153,7 +153,7 @@
 		<widget name="sactive" position="540,614" pixmap="icons/lock_on.png" size="38,36" alphatest="blend" transparent="1" zPosition="2"/>
 		<widget name="system" position="600,610" size="150,45" font="Regular;33" foregroundColor="white" backgroundColor="mid" valign="center" transparent="1"/>
 		<widget name="labsys" position="1041,610" size="501,45" font="Regular;33" foregroundColor="white" backgroundColor="mid" valign="center" halign="right" transparent="1" zPosition="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="MenuButton"/>
 	</screen>
 	<screen name="NetworkInadynSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
@@ -192,7 +192,7 @@
 		<widget name="dlnainactive" position="540,839" pixmap="icons/lock_off.png" size="38,36" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="dlnaactive" position="540,839" pixmap="icons/lock_on.png" size="38,36" alphatest="blend" transparent="1" zPosition="2"/>
 		<widget name="dlna" position="600,835" size="501,45" font="Regular;33" foregroundColor="white" backgroundColor="mid" valign="center" halign="left" transparent="1" zPosition="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="MenuButton"/>
 	</screen>
 	<screen name="NetworkuShareSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
@@ -203,7 +203,7 @@
 		<panel name="template1"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
 		<widget name="checkList" position="540,385" size="1002,624" font="Regular;33" secondfont="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="NetworkMiniDLNA" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
@@ -234,7 +234,7 @@
 		<widget name="dlnainactive" position="540,794" pixmap="icons/lock_off.png" size="38,36" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="dlnaactive" position="540,794" pixmap="icons/lock_on.png" size="38,36" alphatest="blend" transparent="1" zPosition="2"/>
 		<widget name="dlna" position="600,790" size="501,45" font="Regular;33" foregroundColor="white" backgroundColor="mid" valign="center" halign="left" transparent="1" zPosition="1"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="MenuButton"/>
 	</screen>
 	<screen name="NetworkMiniDLNASetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
@@ -245,7 +245,7 @@
 		<panel name="template1"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
 		<widget name="checkList" position="540,385" size="1002,624" font="Regular;33" secondfont="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- https://github.com/oe-alliance/enigma2-plugins/tree/2.3/networkbrowser/src -->
 	<!-- system - network - mounts setup - Mount Manager -->
@@ -264,7 +264,7 @@
 				}</convert>
 		</widget>
 		<panel name="introduction"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="NetworkSATPI" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="NetworkAfp"/>
@@ -301,10 +301,10 @@
 				"itemHeight": 78
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- system - network - mounts setup - Mount Manager - user management-->
-	<screen name="UserManager" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
+<screen name="UserManager" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
 		<panel name="introduction"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="515,384" size="978,623" zPosition="1"/>
@@ -318,7 +318,7 @@
 					"itemHeight": 78
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="UserDialog" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="Setup-Default"/>
@@ -348,7 +348,7 @@
 				"itemHeight": 78
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 		<panel name="OKButton"/>
 	</screen>
 	<!-- system - network - mounts setup - network browser - expert -->
@@ -372,7 +372,7 @@
 				"itemHeight": 78
 				}</convert>
 		</widget>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<screen name="WlanStatus" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid" title="Wireless network state">
 		<panel name="template1"/>
@@ -394,7 +394,7 @@
 		<widget source="IF" render="Label" position="818,865" size="563,45" zPosition="10" valign="center" font="Regular;33" halign="left" foregroundColor="white" backgroundColor="botmid" transparent="1"/>
 		<widget source="Statustext" render="Label" position="540,904" size="173,45" valign="center" zPosition="10" font="Regular;33" halign="left" foregroundColor="white" backgroundColor="botmid" transparent="1"/>
 		<widget name="statuspic" pixmaps="buttons/button_green.png,buttons/button_green_off.png" position="818,914" zPosition="10" size="23,24" transparent="1" alphatest="blend"/>
-		<panel name="New-Buttons-T1"/>
+		<panel name="New-Buttons"/>
 	</screen>
 </skin>
 
