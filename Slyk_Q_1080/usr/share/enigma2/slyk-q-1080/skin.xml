@@ -13,7 +13,6 @@
 	<include filename="q-button-templates.xml"/>
 	<include filename="q-openatv.xml"/>
 	<include filename="q-legacy.xml"/>
-	<!-- <include filename="q-vix.xml" /> -->
 	<include filename="q-wizards.xml"/>
 	<include filename="q-menus.xml"/>
 	<include filename="q-infopanel.xml"/>
@@ -25,12 +24,13 @@
 	<include filename="q-plugins.xml"/>
 	<include filename="q-network.xml"/>
 	<include filename="q-picons.xml"/>
+	<!-- <include filename="q-vix.xml" /> -->
 	<!-- fonts -->
 	<fonts>
 		<!-- default skin fonts -->
-		<font name="Subtitlefont" filename="/usr/share/fonts/nmsbd.ttf" scale="100"/>
+		<font name="Subtitlefont" filename="/usr/share/fonts/nmsbd.ttf" scale="90"/>
 		<font name="LCD" filename="/usr/share/fonts/lcd.ttf" scale="100"/>
-		<font name="Replacement" filename="/usr/share/fonts/ae_AlMateen.ttf" scale="100" replacement="1"/>
+		<font name="Replacement" filename="/usr/share/fonts/ae_AlMateen.ttf" scale="90" replacement="1"/>
 		<!-- slyk1hd fonts -->
 		<font name="Regular" filename="fonts/slyk-regular.ttf" scale="100"/>
 		<font name="Bold" filename="fonts/slyk-medium.ttf" scale="100"/>
