@@ -1,5 +1,4 @@
 <skin>
-	
 	<!-- ButtonSetup.py -->
 	<screen name="ButtonSetupSelect" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="ButtonSetup"/>
@@ -13,7 +12,6 @@
 		<panel name="New-Buttons"/>
 	</screen>
 	<!-- H9SDswap.py - not skinned -->
-
 	<!-- MultiBootSelector.py -->
 	<screen name="MultiBootSelector" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="template1"/>
@@ -21,7 +19,6 @@
 		<widget name="config" position="540,385" size="1002,624" font="Regular;33" secondfont="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
 		<widget source="description" render="Label" position="540,140" size="1002,195" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
 		<panel name="New-Buttons"/>
-	
 	</screen>
 	<!-- SoftwareUpdate.py -->
 	<!-- ViewGitLog -->
@@ -31,7 +28,6 @@
 		<widget name="text" position="540,62" size="1335,956" font="Console;24" foregroundColor="white" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
 		<panel name="New-Buttons"/>
 	</screen>
-	
 	<screen name="VIXMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid" title="Main Menu">
 		<panel name="template1"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
@@ -44,12 +40,11 @@
 				}</convert>
 		</widget>
 		<widget source="menu" render="Listbox" position="540,385" size="1002,624" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" font="Regular;33" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="2">
-			<convert type="TemplatedMultiContent">{"template": [	
-                                             MultiContentEntryText(pos = (15,0), size = (970,78), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0, color = 0x00ffffff, color_sel = 0x00ffffff, backcolor_sel = 0x0000437c)
-                                              ],
-				"fonts": [gFont("Regular",33)],
-				"itemHeight": 78
-			
+			<convert type="TemplatedMultiContent">{"template": [
+			MultiContentEntryText(pos = (15,0), size = (970,78), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0, color = 0x00ffffff, color_sel = 0x00ffffff, backcolor_sel = 0x0000437c)
+			],
+			"fonts": [gFont("Regular",33)],
+			"itemHeight": 78
 				}</convert>
 		</widget>
 		<panel name="New-Buttons"/>
@@ -144,9 +139,9 @@
 		<panel name="Swap"/>
 	</screen>
 	<!-- openvix only - about - software update  -->
-    <screen name="SoftwareUpdateChoices" position="center,center" size="900,720" flags="wfNoBorder" backgroundColor="messageboxbg">
-        <widget name="list" position="0,0" size="900,468" itemHeight="78" font="Regular;33" foregroundColor="white" backgroundColor="messageboxbg" foregroundColorSelected="white" backgroundColorSelected="select-darkblue-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
-        <widget name="text" position="0,500" size="900,156" font="Regular;33" foregroundColor="white" backgroundColor="messageboxbg" valign="center" halign="center" transparent="1"/>
-        <applet type="onLayoutFinish">self["list"].instance.setItemHeight(78)</applet>
-    </screen>
+	<screen name="SoftwareUpdateChoices" position="center,center" size="900,720" flags="wfNoBorder" backgroundColor="messageboxbg">
+		<widget name="list" position="0,0" size="900,468" itemHeight="78" font="Regular;33" foregroundColor="white" backgroundColor="messageboxbg" foregroundColorSelected="white" backgroundColorSelected="select-darkblue-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="text" position="0,500" size="900,156" font="Regular;33" foregroundColor="white" backgroundColor="messageboxbg" valign="center" halign="center" transparent="1"/>
+		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(78)</applet>
+	</screen>
 </skin>

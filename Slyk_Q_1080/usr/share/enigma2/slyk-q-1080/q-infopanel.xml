@@ -28,13 +28,13 @@ self["sublist"].l.setFont(1, gFont("Regular", 24))</applet>
 		<ePixmap pixmap="q-backgrounds/setup-2row-bg.png" alphatest="blend" position="540,384" size="1002,626" zPosition="1"/>
 		<widget source="devicelist" render="Listbox" position="540,385" size="1002,660" foregroundColor="white" backgroundColor="mid" foregroundColorSelected="white" backgroundColorSelected="select-lightblue-bg" selectionPixmap="q-selectbars/1002-156.png" valign="center" itemHeight="156" scrollbarMode="showNever" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">{"template": [
-				 MultiContentEntryText(pos = (150, 18), size = (960, 660), font=0, text = 0),
-				 MultiContentEntryText(pos = (150, 69), size = (960, 660), font=1, flags = RT_VALIGN_TOP, text = 1),
-				 MultiContentEntryPixmapAlphaBlend(pos = (15, 23), size = (120, 120), png = 2),
-				],
-				"fonts": [gFont("Bold",33),gFont("Regular",30)],
-				"itemHeight": 156
-				}</convert>
+			MultiContentEntryText(pos = (150, 18), size = (960, 660), font=0, text = 0),
+			MultiContentEntryText(pos = (150, 69), size = (960, 660), font=1, flags = RT_VALIGN_TOP, text = 1),
+			MultiContentEntryPixmapAlphaBlend(pos = (15, 23), size = (120, 120), png = 2),
+			],
+			"fonts": [gFont("Bold",33),gFont("Regular",30)],
+			"itemHeight": 156
+			}</convert>
 		</widget>
 		<widget name="lab1" zPosition="2" position="525,314" size="960,165" font="Regular;34" backgroundColor="mid" foregroundColor="white" valign="center" halign="center" transparent="1"/>
 	</screen>
@@ -58,15 +58,15 @@ self["sublist"].l.setFont(1, gFont("Regular", 24))</applet>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="518,384" size="978,623" zPosition="1"/>
 		<widget source="list" render="Listbox" position="518,385" size="978,624" selectionPixmap="q-selectbars/q-menu-2-978.png" foregroundColor="white" backgroundColor="mid" foregroundColorSelected="white" backgroundColorSelected="select-darkblue-bg" itemHeight="78" font="Regular;30" transparent="1" enableWrapAround="1" zPosition="2" scrollbarMode="showNever">
 			<convert type="TemplatedMultiContent">{"template": [
-						MultiContentEntryText(pos = (15, 6), size = (897, 45), font=0, flags = RT_HALIGN_LEFT, text = 0,  color = 0x00ffffff, color_sel = 0x00ffffff), # index 0 is the name
-						MultiContentEntryText(pos = (15, 39), size = (897, 30), font=1, flags = RT_HALIGN_LEFT, text = 2, color = 0x00ffffff, color_sel = 0x00ffffff), # index 2 is the description
-						MultiContentEntryPixmapAlphaBlend(pos = (900, 3), size = (72, 72), png = 4), # index 4 is the status pixmap
-						MultiContentEntryPixmapAlphaBlend(pos = (0, 78), size = (978, 0), png = 5), # index 5 is the div pixmap
-					],
-				"fonts": [gFont("Regular",30),gFont("Regular",24)],
-				"itemHeight": 78,
-				"scrollbarMode": "showNever"
-				}</convert>
+			MultiContentEntryText(pos = (15, 6), size = (897, 45), font=0, flags = RT_HALIGN_LEFT, text = 0,  color = 0x00ffffff, color_sel = 0x00ffffff), # index 0 is the name
+			MultiContentEntryText(pos = (15, 39), size = (897, 30), font=1, flags = RT_HALIGN_LEFT, text = 2, color = 0x00ffffff, color_sel = 0x00ffffff), # index 2 is the description
+			MultiContentEntryPixmapAlphaBlend(pos = (900, 3), size = (72, 72), png = 4), # index 4 is the status pixmap
+			MultiContentEntryPixmapAlphaBlend(pos = (0, 78), size = (978, 0), png = 5), # index 5 is the div pixmap
+			],
+			"fonts": [gFont("Regular",30),gFont("Regular",24)],
+			"itemHeight": 78,
+			"scrollbarMode": "showNever"
+			}</convert>
 		</widget>
 		<ePixmap pixmap="q-backgrounds/side-2-box.png" alphatest="blend" position="1515,384" size="324,160" zPosition="1"/>
 		<widget name="packagetext" position="1530,385" size="233,78" font="Regular;27" valign="center" halign="left" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
@@ -91,4 +91,3 @@ self["sublist"].l.setFont(1, gFont("Regular", 24))</applet>
 		<widget name="label1" position="540,62" size="1335,956" font="Console;27" foregroundColor="white" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
 	</screen>
 </skin>
-

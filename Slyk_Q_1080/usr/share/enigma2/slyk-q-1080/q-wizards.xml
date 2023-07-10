@@ -13,17 +13,16 @@
 		<widget name="config" textOffset="15,0" position="540,385" size="1002,624" font="Regular;33" secondfont="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
 		<widget source="list" render="Listbox" position="540,385" size="1002,624" font="Regular;33" secondfont="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">{"template": [
-                                MultiContentEntryText(pos = (15, 20), size = (1002, 45), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("Regular", 33)],
-				"itemHeight": 78
-				}</convert>
+			MultiContentEntryText(pos = (15, 20), size = (1002, 45), flags = RT_HALIGN_LEFT, text = 0) ],
+			"fonts": [gFont("Regular", 33)],
+			"itemHeight": 78
+			}</convert>
 		</widget>
 		<panel name="New-Buttons"/>
 		<panel name="RemoteControlTemplate"/>
 	</screen>
-	
-		<screen name="wizard_rc_templateNew">
-		<widget name="rc" position="1560,385" size="231,750" zPosition="10" alphatest="blend" transparent="0" />
+	<screen name="wizard_rc_templateNew">
+		<widget name="rc" position="1560,385" size="231,750" zPosition="10" alphatest="blend" transparent="0"/>
 		<widget alphatest="blend" name="indicatorU0" pixmap="skin_default/yellow_circle23x23.png" position="1560,385" offset="30,11" size="23,23" zPosition="11"/>
 		<widget alphatest="blend" name="indicatorU1" pixmap="skin_default/yellow_circle23x23.png" position="1560,385" offset="30,11" size="23,23" zPosition="11"/>
 		<widget alphatest="blend" name="indicatorU2" pixmap="skin_default/yellow_circle23x23.png" position="1560,385" offset="30,11" size="23,23" zPosition="11"/>
@@ -58,7 +57,6 @@
 		<widget alphatest="blend" name="indicatorL15" pixmap="skin_default/yellow_circle23x23.png" position="1560,385" offset="30,11" size="23,23" zPosition="11"/>
 		<widget name="label" position="1300,e-280" zPosition="10" size="500,60" transparent="1" font="Regular;24" halign="center"/>
 	</screen>
-	
 	<screen name="StartWizard" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="WizardTemplate"/>
 	</screen>
@@ -90,16 +88,14 @@
 		<widget name="config" textOffset="15,0" position="540,385" size="1002,624" font="Regular;33" secondfont="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2"/>
 		<widget source="languages" render="Listbox" position="540,385" size="1002,624" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" font="Regular;33" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="2">
 			<convert type="TemplatedMultiContent">{"template": [
-      	         	        MultiContentEntryPixmapAlphaBlend(pos = (15,20), size = (90,45), png = 2), # index 2 is the pixmap
-				MultiContentEntryText(pos = (150,20), size = (837,78), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name
-			
-				],
-				"fonts": [gFont("Regular",33)],
-				"itemHeight": 78
-				}</convert>
+			MultiContentEntryPixmapAlphaBlend(pos = (15,20), size = (90,45), png = 2), # index 2 is the pixmap
+			MultiContentEntryText(pos = (150,20), size = (837,78), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name
+			],
+			"fonts": [gFont("Regular",33)],
+			"itemHeight": 78
+			}</convert>
 		</widget>
 		<panel name="New-Buttons"/>
 		<panel name="RemoteControlTemplate"/>
 	</screen>
 </skin>
-

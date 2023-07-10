@@ -342,6 +342,7 @@ self["bouquetlist"].bouquetNamePadding = 15</applet>
 		<ePixmap pixmap="buttons/key_info.png" position="1845,1030" size="38,38" alphatest="blend" zPosition="3"/>
 		<applet type="onLayoutFinish">self["bouquetlist"].bouquetNamePadding = 15</applet>
 	</screen>
+	<!-- graphical infobar - multi epg < > info -->
 	<screen name="InfoBarEventView" position="0,0" size="1920,303" backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
 		<eLabel position="0,0" size="1920,273" backgroundColor="blackglass" transparent="0" zPosition="-2"/>
 		<ePixmap position="0,0" size="1920,273" pixmap="q-infobars/infobar-top.png" alphatest="blend" zPosition="-1"/>
@@ -407,4 +408,3 @@ self["bouquetlist"].bouquetNamePadding = 15</applet>
 		<widget name="list" position="0,0" size="364,312" font="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 </skin>
-

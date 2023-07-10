@@ -408,4 +408,3 @@
 		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(45)</applet>
 	</screen>
 </skin>
-
