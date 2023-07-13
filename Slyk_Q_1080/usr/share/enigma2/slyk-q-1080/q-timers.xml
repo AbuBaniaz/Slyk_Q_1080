@@ -51,7 +51,7 @@
 	</screen>
 	<screen name="AutoTimerPreview" position="0,0" size="1920,1080" title="Preview AutoTimer" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
-		<widget source="timerlist" render="Listbox" position="540,385" size="1002,624" font="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showNever" transparent="1" zPosition="2">
+		<widget source="timerlist" render="Listbox" position="540,385" size="1002,624" font="Regular;33" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">{"template": [
 			MultiContentEntryText(pos=(15,0), size=(486,36), text = 0, font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER), #Event
 			MultiContentEntryText(pos=(501, 0), size=(486,36), text = 3, font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER), #Service

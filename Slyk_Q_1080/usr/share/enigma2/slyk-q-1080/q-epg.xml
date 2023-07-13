@@ -74,7 +74,7 @@
 		<widget name="bouquetlist" position="0,53" size="1920,966" font="Regular;33" itemHeight="63" foregroundColor="white" foregroundColorSelected="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" transparent="0" borderColor="#003473" borderWidth="0" scrollbarMode="showNever" zPosition="6"/>
 		<applet type="onLayoutFinish">self["bouquetlist"].bouquetNamePadding = 18</applet>
 		<ePixmap pixmap="q-backgrounds/button-bg.png" position="0,1018" size="491,62" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="0,1030" size="490,38" font="Regular;33" foregroundColor="white" backgroundColor="topleft" valign="center" halign="center" transparent="1" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="0,1030" size="490,38" font="Regular;30" foregroundColor="white" backgroundColor="topleft" valign="center" halign="center" transparent="1" zPosition="2">
 			<convert type="Slyk18ClockToText">Slyk18DateFormat1</convert>
 		</widget>
 		<panel name="New-Buttons"/>
@@ -143,7 +143,7 @@
 		<widget name="list" position="0,385" size="1920,633" backgroundColor="mid" ServiceFontGraphical="Regular;33" EntryFontGraphical="Regular;33" ServiceForegroundColor="#eeeeee" ServiceForegroundColorNow="white" EntryForegroundColor="#eeeeee" EntryForegroundColorSelected="white" EntryForegroundColorNow="white" EntryForegroundColorNowSelected="white" RecordForegroundColor="#eeeeee" RecordForegroundColorSelected="white" ZapForegroundColor="#eeeeee" ZapForegroundColorSelected="white" ServiceBackgroundColor="mid" ServiceBackgroundColorNow="select-darkblue-bg" EntryBackgroundColor="epg" EntryBackgroundColorSelected="epg-selected" EntryBackgroundColorNow="epg-now" EntryBackgroundColorNowSelected="epg-selected" RecordBackgroundColor="red" RecordBackgroundColorSelected="epg-selected" ZapBackgroundColor="zapgreen" ZapBackgroundColorSelected="epg-selected" ServiceBorderColor="#336498" ServiceBorderWidth="1" ServiceNamePadding="15" EntryBorderColor="#336498" EventBorderWidth="1" EventNamePadding="15" NumberOfRows="10" transparent="1"/>
 		<widget name="bouquetlist" position="0,385" size="490,630" font="Regular;33" itemHeight="63" foregroundColor="white" foregroundColorSelected="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" transparent="0" borderColor="#003473" borderWidth="0" scrollbarMode="showNever" zPosition="6"/>
 		<ePixmap pixmap="q-backgrounds/button-bg.png" position="0,1018" size="491,62" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="0,1030" size="490,38" font="Regular;33" foregroundColor="white" backgroundColor="topleft" valign="center" halign="center" transparent="1" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="0,1030" size="490,38" font="Regular;30" foregroundColor="white" backgroundColor="topleft" valign="center" halign="center" transparent="1" zPosition="2">
 			<convert type="Slyk18ClockToText">Slyk18DateFormat1</convert>
 		</widget>
 		<panel name="New-Buttons"/>
@@ -166,7 +166,7 @@
 		<widget name="lab1" position="0,795" size="1920,220" font="Regular;30" halign="center" valign="center" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
 		<widget name="list" position="0,795" size="1920,220" backgroundColor="mid" ServiceFontInfobar="Regular;30" EventFontInfobar="Regular;30" ServiceForegroundColor="#eeeeee" ServiceForegroundColorNow="white" EntryForegroundColor="#eeeeee" EntryForegroundColorSelected="white" EntryForegroundColorNow="white" EntryForegroundColorNowSelected="white" RecordForegroundColor="#eeeeee" RecordForegroundColorSelected="white" ZapForegroundColor="#eeeeee" ZapForegroundColorSelected="white" ServiceBackgroundColor="mid" ServiceBackgroundColorNow="select-darkblue-bg" EntryBackgroundColor="epg" EntryBackgroundColorSelected="epg-selected" EntryBackgroundColorNow="epg-now" EntryBackgroundColorNowSelected="epg-selected" RecordBackgroundColor="red" RecordBackgroundColorSelected="epg-selected" ZapBackgroundColor="zapgreen" ZapBackgroundColorSelected="epg-selected" ServiceBorderColor="#336498" ServiceBorderWidth="1" ServiceNamePadding="15" EntryBorderColor="#336498" EventBorderWidth="1" EventNamePadding="15" EntryFontWrap="no" NumberOfRows="4" zPosition="2" transparent="1"/>
 		<widget name="bouquetlist" position="0,795" size="375,210" font="Regular;30" itemHeight="53" foregroundColor="white" foregroundColorSelected="white" backgroundColor="epg" backgroundColorSelected="epg-selected" transparent="1" borderColor="#336498" borderWidth="2" scrollbarMode="showNever" zPosition="6"/>
-		<widget source="global.CurrentTime" render="Label" position="11,1030" size="360,38" font="Regular;33" foregroundColor="white" backgroundColor="button-bg" valign="center" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="11,1030" size="360,38" font="Regular;30" foregroundColor="white" backgroundColor="button-bg" valign="center" transparent="1" zPosition="1">
 			<convert type="Slyk18ClockToText">Slyk18DateFormat1</convert>
 		</widget>
 		<panel name="full-button-bg"/>
@@ -400,6 +400,19 @@ self["bouquetlist"].bouquetNamePadding = 15</applet>
 			<convert type="SlykServiceInfo">SubtitlesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+	</screen>
+	<!-- epg - show bouquet on launch -->
+	<screen name="BouquetSelector" title="Select a bouquet" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
+		<ePixmap pixmap="q-toppicks/hero.jpg" position="0,0" size="1920,1080" zPosition="-1"/>
+		<panel name="logo"/>
+		<panel name="time"/>
+		<panel name="tv"/>
+		<panel name="q-title"/>
+		<panel name="leftnav"/>
+		<panel name="rightnav"/>
+		<widget name="menu" textOffset="15,18" position="90,545" size="364,535" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu.png" itemHeight="78" font="Regular;33" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="2"/>
+		<panel name="nav-gradient"/>
+		<panel name="toppicks"/>
 	</screen>
 	<!-- epg tabs hack - red button popup -->
 	<screen name="OptionDialog" position="center,center" size="364,312" backgroundColor="mid" flags="wfNoBorder" zPosition="10">

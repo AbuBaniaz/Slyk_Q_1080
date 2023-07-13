@@ -73,7 +73,7 @@
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="0,0" zPosition="10" size="1920,60" alphatest="blend"/>
 	</screen>
 	<screen name="footnote">
-		<widget name="footnote" position="1575,931" size="308,78" font="Regular;27" foregroundColor="white" backgroundColor="botmid" halign="left" transparent="1" valign="center" zPosition="4"/>
+		<widget name="footnote" position="1575,931" size="308,78" font="Regular;21" foregroundColor="white" backgroundColor="botmid" halign="left" transparent="1" valign="center" zPosition="4"/>
 	</screen>
 	<screen name="VKeyIcon">
 		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1845,1030" zPosition="4" size="38,38" transparent="1" alphatest="blend">
