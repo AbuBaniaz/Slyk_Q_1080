@@ -1,9 +1,5 @@
 <skin>
-	<!-- ButtonSetup.py -->
-	<screen name="ButtonSetupSelect" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="mid">
-		<panel name="ButtonSetup"/>
-		<panel name="New-Buttons"/>
-	</screen>
+
 	<!--GitCommitInfo.py -->
 	<screen name="CommitInfo" title="OE Changes" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>

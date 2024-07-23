@@ -144,10 +144,10 @@
 		<!-- Autotimer tick box -->
 		<parameter name="AutotimerRecordIcon" value="68,9,30,30"/>
 		<!-- Autotimer Record Icon -->
-		<parameter name="ChoicelistVerticalAlignment" value="*top"/>
+		<parameter name="ChoicelistVerticalAlignment" value="*center"/>
 		<parameter name="ChoicelistDash" value="0,3,1002,78"/>
-		<parameter name="ChoicelistNameSingle" value="68,20,919,78"/>
-		<parameter name="ChoicelistName" value="68,20,919,78"/>
+		<parameter name="ChoicelistNameSingle" value="68,0,919,78"/>
+		<parameter name="ChoicelistName" value="68,0,919,78"/>
 		<parameter name="ChoicelistIcon" value="15,20,38,38"/>
 		<parameter name="ConfigListSeperator" value="501"/>
 		<!-- example is LocationBox -->
