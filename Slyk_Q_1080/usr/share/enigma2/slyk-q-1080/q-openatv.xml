@@ -43,21 +43,17 @@
 			"itemHeight": 78
 			}</convert>
 		</widget>
-		
 		<widget conditional="key_left" name="key_left" pixmap="buttons/key_left.png" position="0,640" size="38,38" alphatest="blend" zPosition="2"/>
 		<widget conditional="key_right" name="key_right" pixmap="buttons/key_right.png" position="50,640" size="38,38" alphatest="blend" zPosition="2"/>
 		<widget conditional="switchdescription" name="switchdescription" position="100,640" size="802,38" font="Regular;33" foregroundColor="white" backgroundColor="mid" transparent="1" valign="center" zPosition="2"/>
 	</screen>
-	
 	<!-- subtitles button - red button -->
 	<!-- checked -->
 	<screen name="QuickSubtitlesConfigMenu" position="center,center" size="1002,450" title="Subtitles Settings">
 		<widget name="config" textOffset="15,0" position="0,0" size="1002,450" font="Regular;33" secondfont="Regular;33" foregroundColor="white" backgroundColor="messageboxbg" foregroundColorSelected="white" backgroundColorSelected="select-darkblue-bg" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
 	</screen>
-	
 	<!-- AutoDiseqc.py -->
 	<!-- BoxPortal.py -->
-	
 	<!-- ButtonSetup -->
 	<!-- hotkey buttons / button setup -->
 	<!-- checked -->
@@ -69,14 +65,12 @@
 		<widget name="choosen" position="540,853" size="1002,156" offset="53,0" font="Regular;33" foregroundColor="bluetext" backgroundColor="botmid" backgroundColorSelected="select-darkblue-bg" foregroundColorSelected="bluetext" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" scrollbarMode="showNever" enableWrapAround="1" transparent="1"/>
 		<panel name="ExitButton"/>
 	</screen>
-	
 	<!-- ButtonSetup.py -->
 	<!-- checked -->
 	<screen name="ButtonSetupSelect" position="0,0" size="1920,1080" title="Button Setup" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="ButtonSetup"/>
 		<panel name="New-Buttons"/>
 	</screen>
-	
 	<!-- CCcamInfo.py -->
 	<!-- setup - decryption - softcam settings - select cccam - info -->
 	<!-- checked -->
@@ -92,8 +86,6 @@ self["menu"].l.setFont(1, gFont("Regular", 33))
 self["menu"].l.setItemHeight(78)
 </applet>
 	</screen>
-	
-	
 	<screen name="CCcamInfoEcmInfoSelection" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="template1"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
@@ -101,7 +93,6 @@ self["menu"].l.setItemHeight(78)
 		<panel name="button-bg"/>
 		<panel name="OKButton"/>
 	</screen>
-	
 	<!-- general -->
 	<!-- menu button on main screen -->
 	<screen name="CCcamInfoInfoScreen" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
@@ -112,7 +103,6 @@ self["menu"].l.setItemHeight(78)
 		<panel name="New-Buttons"/>
 		<panel name="OKButton"/>
 	</screen>
-	
 	<screen name="CCcamShareViewMenu" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="template1"/>
 		<ePixmap pixmap="q-backgrounds/flare-panel-large.png" alphatest="blend" position="539,371" size="1006,614" zPosition="-1"/>
@@ -127,7 +117,6 @@ self["menu"].l.setItemHeight(78)
 		<panel name="New-Buttons"/>
 		<panel name="OKButton"/>
 	</screen>
-	
 	<!-- clients / active clients -->
 	<screen name="CCcamInfoSubMenu" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="template1"/>
@@ -139,7 +128,6 @@ self["menu"].l.setItemHeight(78)
 		<panel name="New-Buttons"/>
 		<panel name="OKButton"/>
 	</screen>
-	
 	<!-- servers -->
 	<screen name="CCcamInfoServerMenu" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="template1"/>
@@ -151,7 +139,6 @@ self["menu"].l.setItemHeight(78)
 		<panel name="New-Buttons"/>
 		<panel name="OKButton"/>
 	</screen>
-	
 	<screen name="CCcamInfoRemoteBoxMenu" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="template1"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
@@ -160,7 +147,6 @@ self["menu"].l.setItemHeight(78)
 		<panel name="New-Buttons"/>
 		<panel name="OKButton"/>
 	</screen>
-	
 	<screen name="CCcamInfoShareInfo" position="center,center" size="1200,675">
 		<widget name="list" position="0,0" size="1200,525" font="Regular;30" foregroundColor="white" backgroundColor="messageboxbg" foregroundColorSelected="white" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/setup-900-105.png" itemHeight="105" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
 		<panel position="0,e-45" size="0,38">
@@ -180,7 +166,6 @@ self["list"].l.setFont(0, gFont("Regular", 33))
 self["list"].l.setFont(1, gFont("Regular", 33))
 </applet>
 	</screen>
-	
 	<screen name="CCcamInfoConfigSwitcher" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="template1"/>
 		<ePixmap pixmap="q-backgrounds/choicelist-bg.png" alphatest="blend" position="540,384" size="1002,228" zPosition="-1"/>
@@ -189,7 +174,6 @@ self["list"].l.setFont(1, gFont("Regular", 33))
 		<panel name="New-Buttons"/>
 		<panel name="OKButton"/>
 	</screen>
-	
 	<screen name="CCcamInfoMenuConfig" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="template1"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
@@ -197,7 +181,6 @@ self["list"].l.setFont(1, gFont("Regular", 33))
 		<panel name="New-Buttons"/>
 		<panel name="OKButton"/>
 	</screen>
-	
 	<!-- openvix screen -->
 	<screen name="CCcamInfoConfigMenu" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="template1"/>
@@ -206,7 +189,6 @@ self["list"].l.setFont(1, gFont("Regular", 33))
 		<panel name="button-bg"/>
 		<panel name="OKButton"/>
 	</screen>
-	
 	<!-- ChoiceBox.py -->
 	<screen name="ChoiceBox" position="center,center" size="780,195">
 		<widget name="text" position="0,0" size="780,78" font="Regular;33"/>
@@ -958,6 +940,74 @@ self["output"].l.setFont(1, gFont("Regular", 27))</applet>
 		<widget name="list" position="540,385" size="1002,624" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" font="Regular;33" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="2"/>
 		<panel name="button-bg"/>
 		<panel name="OKButton"/>
+	</screen>
+	<screen name="PluginBrowserList" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder" title="Plugin browser">
+		<panel name="template1"/>
+		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
+		<panel name="description"/>
+		<widget source="pluginList" render="Listbox" position="540,385" size="1002,624" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" font="Regular;33" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="2" listOrientation="vertical">
+			<convert type="TemplatedMultiContent">
+				{
+					"template": [
+						MultiContentEntryPixmapAlphaBlend(pos=(15, 9), size=(150, 60), png=3, flags=BT_SCALE),
+						MultiContentEntryText(pos = (180, 12), size = (798, 45), font=0, flags = RT_HALIGN_LEFT, text = 1),
+						MultiContentEntryText(pos = (180, 45), size = (798, 30), font=1, flags = RT_HALIGN_LEFT, text = 2)
+
+					],
+					"fonts": [gFont("Regular", 30),gFont("Regular", 20)],
+					"itemHeight": 78
+				}
+			</convert>
+		</widget>
+		<panel name="New-Buttons"/>
+		<panel name="MenuButton-pos2"/>
+		<panel name="OKButton"/>
+	</screen>
+	<screen name="PluginBrowserGrid" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder" title="Plugin browser">
+		<panel name="template1"/>
+		<panel name="description"/>
+		<widget source="pluginGrid" render="Listbox" position="540,385" size="1332,624" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" conditional="pluginGrid" listOrientation="grid" scrollbarMode="showNever" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{
+				"template":
+					[
+					MultiContentEntryText(pos=(0, 0), size=(261, 120), font=0),
+					MultiContentEntryText(pos=(6, 6), size=(249, 108), font=0, backcolor = None),
+					MultiContentEntryPixmapAlphaBlend(pos=(55, 6), size=(150, 60), png=3, flags=BT_SCALE),
+					MultiContentEntryText(pos=(15,72), size=(230, 48), font=0, flags=RT_VALIGN_TOP | RT_HALIGN_CENTER | RT_WRAP, text=1)
+					],
+				"fonts": [parseFont("Regular;18")],
+				"itemWidth": 261,
+				"itemHeight": 120
+				}
+			</convert>
+		</widget>
+		<panel name="New-Buttons"/>
+		<panel name="MenuButton-pos2"/>
+		<panel name="OKButton"/>
+	</screen>
+	<screen name="PluginAction" title="Plugin Browser Action" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
+		<panel name="template1"/>
+		<panel name="description"/>
+		<widget source="plugins" render="Listbox" position="540,385" size="1332,624" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" foregroundColorSelected="white" itemHeight="78" font="Regular;33" transparent="1" enableWrapAround="1" scrollbarMode="showNever">
+			<convert type="TemplatedMultiContent">
+				{
+				"template":
+					[
+					MultiContentEntryPixmapAlphaBlend(pos=(15, 0), size=(78, 78), png=6, flags=BT_SCALE),
+					MultiContentEntryText(pos=(120, 0), size=(1212, 78), font=0, flags=RT_VALIGN_CENTER, text=2, color=0xffffff),
+					MultiContentEntryText(pos=(120, 6), size=(858, 30), font=1, flags=RT_VALIGN_CENTER, text=3, color=0xffffff),
+					MultiContentEntryText(pos=(978, 6), size=(210, 30), font=1, flags=RT_VALIGN_CENTER, text=5, color=0xffffff),
+					MultiContentEntryText(pos=(120, 36), size=(1140, 30), font=2, flags=RT_VALIGN_CENTER, text=4, color=0xffffff),
+					MultiContentEntryPixmapAlphaBlend(pos=(1260, 3), size=(72, 72), png=7, flags=BT_SCALE)
+					],
+				"fonts": [parseFont("Regular;30"), parseFont("Regular;24"), parseFont("Regular;21")],
+				"itemHeight": 78
+				}
+			</convert>
+		</widget>
+		<panel name="OKButton"/>
+		<panel name="New-Buttons"/>
 	</screen>
 	<!-- RdsDisplay.py - RdsInfoDisplay RassInteractive - not skinned -->
 	<!-- RestartNetwork.py -->
