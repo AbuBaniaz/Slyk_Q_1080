@@ -1132,6 +1132,7 @@ self["output"].l.setFont(1, gFont("Regular", 27))</applet>
 		</widget>
 		<panel name="New-Buttons"/>
 	</screen>
+	
 	<!-- SkinSelector.py -->
 	<screen name="SkinSelector" position="0,0" size="1920,1080" title="Skin Selector" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
@@ -1142,6 +1143,14 @@ self["output"].l.setFont(1, gFont("Regular", 27))</applet>
 		<panel name="New-Buttons"/>
 		<panel name="OKButton"/>
 	</screen>
+	
+	<screen name="SkinSelection" position="0,0" size="1920,1080" title="Skin Selection" flags="wfNoBorder" backgroundColor="mid">
+		<panel name="Setup"/>
+		<widget name="Image" position="0,0" size="0,0" alphatest="blend" conditional="Image" transparent="1" zPosition="2" />
+		<widget name="preview" position="1560,384" size="324,243" alphatest="blend" conditional="preview" transparent="1" zPosition="3" />
+	</screen>
+	
+	
 	<!-- SleepTimer.py -->
 	<!-- SleepTimerEdit via standby menu -->
 	<screen name="SleepTimerEdit" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" zPosition="4">
