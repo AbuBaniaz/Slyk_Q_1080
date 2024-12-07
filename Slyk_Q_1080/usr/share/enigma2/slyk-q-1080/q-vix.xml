@@ -1,5 +1,4 @@
 <skin>
-
 	<!--GitCommitInfo.py -->
 	<screen name="CommitInfo" title="OE Changes" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
@@ -90,7 +89,7 @@
 		<panel name="MenuButton"/>
 		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(78)</applet>
 	</screen>
-	<screen name="ImageBackup" position="0,0" size="1920,1080" title="Image Manager" flags="wfNoBorder" backgroundColor="mid">
+	<screen name="VIXImageBackup" position="0,0" size="1920,1080" title="Image Manager" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
 		<widget name="lab1" position="540,140" size="1002,195" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
 		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
@@ -140,4 +139,25 @@
 		<widget name="text" position="0,500" size="900,156" font="Regular;33" foregroundColor="white" backgroundColor="messageboxbg" valign="center" halign="center" transparent="1"/>
 		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(78)</applet>
 	</screen>
+	<screen name="HelpMenuVIX" position="fill" flags="wfNoBorder" backgroundColor="mid">
+		<panel name="template1"/>
+		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
+		<widget name="list" position="540,385" size="1002,697" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" selectionPixmap="q-selectbars/q-menu-2.png" itemHeight="78" font="Regular;33" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="2"/>
+		<widget name="long_key" position="540,140" size="1002,195" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
+		<panel name="RemoteControlTemplate"/>
+		<panel name="nav-gradient-2"/>
+	</screen>
+	<screen name="VIXDevicesPanel" position="0,0" size="1920,1080" title="Mount Manager" flags="wfNoBorder" backgroundColor="mid">
+		<panel name="HddMount"/>
+	</screen>
+	<screen name="VIXDevicePanelConf" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder" zPosition="4" title="Choose where to mount your devices to:">
+		<panel name="DevicePanelConf"/>
+	</screen>
+	<screen name="VIXChoiceBox" position="center,center" size="900,720" zPosition="5">
+		<widget name="list" position="0,0" size="900,600" font="Regular;33" foregroundColor="white" backgroundColor="messageboxbg" foregroundColorSelected="white" backgroundColorSelected="bg-selected-text" enableWrapAround="1" transparent="1" itemHeight="78"/>
+		<widget name="text" position="0,400" size="900,108" font="Regular;33"/>
+		<widget name="description" position="0,0" size="0,0" font="Regular;33"/>
+		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(78)</applet>
+	</screen>
+	
 </skin>

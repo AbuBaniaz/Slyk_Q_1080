@@ -149,9 +149,9 @@
 		<panel name="New-Buttons"/>
 		<ePixmap pixmap="buttons/key_menu.png" position="1793,1030" size="38,38" transparent="1" alphatest="blend" zPosition="3"/>
 		<ePixmap pixmap="buttons/key_info.png" position="1845,1030" size="38,38" transparent="1" alphatest="blend" zPosition="3"/>
-		<widget name="tabsrow" position="491,275" size="1429,54" backgroundColor="transparent" transparent="1"/>
-		<widget name="firsttab" position="0,0" size="0,0" font="Bold;30" foregroundColor="white" backgroundColor="#0f3963" valign="center" halign="center" noWrap="1" transparent="0" zPosition="2"/>
-		<widget name="guidebouquetlist" position="0,0" size="0,0" font="Regular;30" foregroundColor="white" backgroundColor="#2061a1" valign="center" halign="left" noWrap="1" transparent="1" zPosition="2"/>
+		<!-- <widget name="tabsrow" position="491,275" size="1429,54" backgroundColor="transparent" transparent="1"/> -->
+		<!-- <widget name="firsttab" position="0,0" size="0,0" font="Bold;30" foregroundColor="white" backgroundColor="#0f3963" valign="center" halign="center" noWrap="1" transparent="0" zPosition="2"/> -->
+		<!-- <widget name="guidebouquetlist" position="0,0" size="0,0" font="Regular;30" foregroundColor="white" backgroundColor="#2061a1" valign="center" halign="left" noWrap="1" transparent="1" zPosition="2"/> -->
 		<applet type="onLayoutFinish">self["bouquetlist"].bouquetNamePadding = 15</applet>
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">

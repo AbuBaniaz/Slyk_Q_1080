@@ -24,7 +24,7 @@
 	<include filename="q-plugins.xml"/>
 	<include filename="q-network.xml"/>
 	<include filename="q-picons.xml"/>
-	<!-- <include filename="q-vix.xml" /> -->
+	<include filename="q-vix.xml" />
 	<!-- fonts -->
 	<fonts>
 		<!-- default skin fonts -->
