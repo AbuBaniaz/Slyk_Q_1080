@@ -5,23 +5,23 @@
 		<ePixmap pixmap="q-toppicks/tile-bg.png" position="1065,381" size="252,332" alphatest="blend" zPosition="2"/>
 		<ePixmap pixmap="q-toppicks/tile-bg.png" position="1329,381" size="252,332" alphatest="blend" zPosition="2"/>
 		<ePixmap pixmap="q-toppicks/tile-bg.png" position="1593,381" size="252,332" alphatest="blend" zPosition="2"/>
-		<ePixmap pixmap="q-toppicks/tile-bg.png" position="537,775" size="252,332" alphatest="blend" zPosition="2"/>
-		<ePixmap pixmap="q-toppicks/tile-bg.png" position="801,775" size="252,332" alphatest="blend" zPosition="2"/>
-		<ePixmap pixmap="q-toppicks/tile-bg.png" position="1065,775" size="252,332" alphatest="blend" zPosition="2"/>
-		<ePixmap pixmap="q-toppicks/tile-bg.png" position="1329,775" size="252,332" alphatest="blend" zPosition="2"/>
-		<ePixmap pixmap="q-toppicks/tile-bg.png" position="1593,775" size="252,332" alphatest="blend" zPosition="2"/>
+		<ePixmap pixmap="q-toppicks/tile-bg.png" position="537,725" size="252,332" alphatest="blend" zPosition="2"/>
+		<ePixmap pixmap="q-toppicks/tile-bg.png" position="801,725" size="252,332" alphatest="blend" zPosition="2"/>
+		<ePixmap pixmap="q-toppicks/tile-bg.png" position="1065,725" size="252,332" alphatest="blend" zPosition="2"/>
+		<ePixmap pixmap="q-toppicks/tile-bg.png" position="1329,725" size="252,332" alphatest="blend" zPosition="2"/>
+		<ePixmap pixmap="q-toppicks/tile-bg.png" position="1593,725" size="252,332" alphatest="blend" zPosition="2"/>
 		<ePixmap pixmap="q-toppicks/toppicks1.jpg" position="542,386" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
 		<ePixmap pixmap="q-toppicks/toppicks2.jpg" position="806,386" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
 		<ePixmap pixmap="q-toppicks/toppicks3.jpg" position="1070,386" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
 		<ePixmap pixmap="q-toppicks/toppicks4.jpg" position="1334,386" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
 		<ePixmap pixmap="q-toppicks/toppicks5.jpg" position="1598,386" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
-		<ePixmap pixmap="q-toppicks/toppicks6.jpg" position="542,780" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
-		<ePixmap pixmap="q-toppicks/toppicks7.jpg" position="806,780" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
-		<ePixmap pixmap="q-toppicks/toppicks8.jpg" position="1070,780" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
-		<ePixmap pixmap="q-toppicks/toppicks9.jpg" position="1334,780" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
-		<ePixmap pixmap="q-toppicks/toppicks10.jpg" position="1598,780" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
-		<eLabel text="Sky Cinema" position="542,322" size="250,48" font="Regular;42" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
-		<eLabel text="Top Picks" position="542,718" size="250,48" font="Regular;42" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
+		<ePixmap pixmap="q-toppicks/toppicks6.jpg" position="542,730" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
+		<ePixmap pixmap="q-toppicks/toppicks7.jpg" position="806,730" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
+		<ePixmap pixmap="q-toppicks/toppicks8.jpg" position="1070,730" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
+		<ePixmap pixmap="q-toppicks/toppicks9.jpg" position="1334,730" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
+		<ePixmap pixmap="q-toppicks/toppicks10.jpg" position="1598,730" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
+		<eLabel text="Todays Top Picks" position="542,322" size="510,48" font="Regular;42" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
+
 	</screen>
 	<screen name="menu-1panel">
 		<ePixmap pixmap="q-toppicks/hero.jpg" position="0,0" size="1920,1080" zPosition="-1"/>
