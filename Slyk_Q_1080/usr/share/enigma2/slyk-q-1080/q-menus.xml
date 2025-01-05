@@ -20,7 +20,7 @@
 		<ePixmap pixmap="q-toppicks/toppicks8.jpg" position="1070,730" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
 		<ePixmap pixmap="q-toppicks/toppicks9.jpg" position="1334,730" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
 		<ePixmap pixmap="q-toppicks/toppicks10.jpg" position="1598,730" size="240,320" backgroundColor="mid" transparent="0" zPosition="2"/>
-		<eLabel text="Todays Top Picks" position="542,322" size="510,48" font="Regular;42" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
+		<eLabel text="Today's Top Picks" position="542,322" size="510,48" font="Regular;42" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
 
 	</screen>
 	<screen name="menu-1panel">
