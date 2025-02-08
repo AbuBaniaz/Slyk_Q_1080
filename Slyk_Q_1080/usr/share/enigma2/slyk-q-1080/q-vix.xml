@@ -157,7 +157,9 @@
 		<widget name="list" position="0,0" size="900,600" font="Regular;33" foregroundColor="white" backgroundColor="messageboxbg" foregroundColorSelected="white" backgroundColorSelected="bg-selected-text" enableWrapAround="1" transparent="1" itemHeight="78"/>
 		<widget name="text" position="0,400" size="900,108" font="Regular;33"/>
 		<widget name="description" position="0,0" size="0,0" font="Regular;33"/>
-		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(78)</applet>
+		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(78)
+self.autoResize()
+</applet>
 	</screen>
 	
 </skin>
