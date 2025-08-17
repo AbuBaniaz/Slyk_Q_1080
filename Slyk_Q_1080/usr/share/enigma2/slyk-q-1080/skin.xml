@@ -126,11 +126,12 @@
 		</borderset>
 	</windowstyle>
 	<windowstyle type="skinned" id="1">
-		<color name="Background" color="messageboxbg"/>
+		<color name="Background" color="black"/>
 		<color name="LabelForeground" color="white"/>
 		<color name="ListboxBackground" color="messageboxbg"/>
 		<color name="ListboxForeground" color="white"/>
 		<color name="ListboxSelectedBackground" color="select-darkblue-bg"/>
+		
 		<color name="ListboxSelectedForeground" color="white"/>
 		<color name="ListboxMarkedBackground" color="select-darkblue-bg"/>
 		<color name="ListboxMarkedForeground" color="red"/>

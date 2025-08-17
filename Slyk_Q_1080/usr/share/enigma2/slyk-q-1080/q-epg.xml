@@ -137,7 +137,10 @@
 		</widget>
 		<ePixmap pixmap="epg/TimeLineBG2.png" position="0,275" size="1920,55" zPosition="1" alphatest="blend"/>
 		<ePixmap pixmap="epg/TimeLineBG2.png" position="0,330" size="1920,55" zPosition="1" alphatest="blend"/>
-		<widget name="timeline_text" position="11,333" size="1909,36" TimelineFont="Bold;33" foregroundColor="white" backgroundColor="mid" borderWidth="0" transparent="1" itemHeight="36" zPosition="2"/>
+		
+		<widget source="Title" render="Label" position="12,275" size="466,54" font="Regular;27" halign="left" valign="center" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
+		
+		<widget name="timeline_text" position="12,333" size="1909,36" TimelineFont="Bold;33" foregroundColor="white" backgroundColor="mid" borderWidth="0" transparent="1" itemHeight="36" zPosition="2"/>
 		<widget name="timeline_now" position="0,385" size="23,633" pixmap="epg/timeline-now.png" alphatest="blend" zPosition="4"/>
 		<widget name="lab1" position="490,385" size="1430,633" font="Regular;33" halign="center" valign="center" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
 		<widget name="list" position="0,385" size="1920,633" backgroundColor="mid" ServiceFontGraphical="Regular;33" EntryFontGraphical="Regular;33" ServiceForegroundColor="#eeeeee" ServiceForegroundColorNow="white" EntryForegroundColor="#eeeeee" EntryForegroundColorSelected="white" EntryForegroundColorNow="white" EntryForegroundColorNowSelected="white" RecordForegroundColor="#eeeeee" RecordForegroundColorSelected="white" ZapForegroundColor="#eeeeee" ZapForegroundColorSelected="white" ServiceBackgroundColor="mid" ServiceBackgroundColorNow="select-darkblue-bg" EntryBackgroundColor="epg" EntryBackgroundColorSelected="epg-selected" EntryBackgroundColorNow="epg-now" EntryBackgroundColorNowSelected="epg-selected" RecordBackgroundColor="red" RecordBackgroundColorSelected="epg-selected" ZapBackgroundColor="zapgreen" ZapBackgroundColorSelected="epg-selected" ServiceBorderColor="#336498" ServiceBorderWidth="1" ServiceNamePadding="15" EntryBorderColor="#336498" EventBorderWidth="1" EventNamePadding="15" NumberOfRows="10" transparent="1"/>
@@ -156,11 +159,12 @@
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap position="0,705" size="1920,375" pixmap="q-infobars/infobar-epg.png" alphatest="blend" zPosition="-1"/>
+		<widget source="Title" render="Label" position="12,678" size="466,54" font="Regular;27" halign="left" valign="center" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
 		<widget render="Pixmap" pixmap="q-icons/record.png" source="session.RecordState" position="945,717" size="30,30" alphatest="blend" zPosition="6">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap pixmap="epg/TimeLineBG.png" position="0,733" size="1920,83" alphatest="blend" zPosition="2"/>
-		<widget name="timeline_text" position="11,749" size="1910,36" TimelineFont="Regular;30" foregroundColor="white" backgroundColor="mid" borderWidth="0" transparent="1" itemHeight="36" zPosition="3"/>
+		<widget name="timeline_text" position="12,749" size="1910,36" TimelineFont="Regular;30" foregroundColor="white" backgroundColor="mid" borderWidth="0" transparent="1" itemHeight="36" zPosition="3"/>
 		<widget name="timeline0" position="0,741" size="27,264" alphatest="blend" pixmap="epg/timeline-seperator2.png" zPosition="5"/>
 		<widget name="timeline_now" position="0,795" size="23,220" pixmap="epg/timeline-now.png" alphatest="blend" zPosition="3"/>
 		<widget name="lab1" position="0,795" size="1920,220" font="Regular;30" halign="center" valign="center" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>

@@ -1069,11 +1069,11 @@ self["output"].l.setFont(1, gFont("Regular", 27))</applet>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="network" position="676,165" size="833,48" font="Bold;33" foregroundColor="white" backgroundColor="topmid" transparent="1" valign="center"/>
-		<widget name="transponder" position="676,212" size="833,48" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1" valign="center"/>
+		<widget name="transponder" position="676,213" size="833,48" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1" valign="center"/>
 		<widget name="scan_state" position="540,306" size="1002,42" font="Regular;33" foregroundColor="white" backgroundColor="mid" transparent="1"/>
-		<widget name="pass" position="540,306" size="1002,42" font="Regular;33" foregroundColor="white" backgroundColor="mid" transparent="1"/>
-		<widget name="scan_progress" position="540,355" size="1002,9" foregroundColor="#44c1fb" backgroundColor="progress-bg" borderWidth="1" borderColor="#555555" zPosition="3" transparent="0"/>
-		<widget name="servicelist" textOffset="15,0" font="Regular;33" position="540,385" size="1002,624" itemHeight="45" selectionDisabled="1" foregroundColor="white" backgroundColor="mid" transparent="1"/>
+		<widget name="pass" position="540,348" size="1002,42" font="Regular;33" foregroundColor="white" backgroundColor="mid" transparent="1"/>
+		<widget name="scan_progress" position="540,399" size="1002,9" foregroundColor="#44c1fb" backgroundColor="progress-bg" borderWidth="1" borderColor="#555555" zPosition="3" transparent="0"/>
+		<widget name="servicelist" textOffset="15,0" font="Regular;33" position="540,427" size="1002,588" itemHeight="42" selectionDisabled="1" foregroundColor="white" backgroundColor="mid" transparent="1"/>
 		<panel name="New-Buttons"/>
 	</screen>
 	<!-- Setup.py - q-menus.xml-->
