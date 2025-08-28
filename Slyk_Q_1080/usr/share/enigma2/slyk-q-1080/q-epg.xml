@@ -66,12 +66,12 @@
 	<screen name="GraphicalEPG" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
 		<panel name="background"/>
 		<ePixmap pixmap="epg/TimeLineBG.png" position="1,0" size="1919,54" zPosition="1" alphatest="blend"/>
-		<widget name="timeline_text" position="15,9" size="1905,36" TimelineFont="Bold;33" foregroundColor="white" backgroundColor="mid" borderWidth="0" transparent="1" itemHeight="36" zPosition="2"/>
+		<widget name="timeline_text" position="15,6" size="1905,36" TimelineFont="Bold;33" foregroundColor="white" backgroundColor="mid" borderWidth="0" transparent="1" itemHeight="36" zPosition="2"/>
 		<widget name="timeline0" position="0,0" size="27,1080" alphatest="blend" pixmap="epg/timeline-seperator2.png" zPosition="5"/>
-		<widget name="timeline_now" position="1,54" size="23,1080" pixmap="epg/timeline-now.png" alphatest="blend" zPosition="4"/>
-		<widget name="lab1" position="0,53" size="1920,1028" font="Regular;33" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="mid" transparent="1"/>
-		<widget name="list" position="0,53" size="1920,966" backgroundColor="mid" ServiceFontGraphical="Regular;33" EntryFontGraphical="Regular;33" ServiceForegroundColor="#eeeeee" ServiceForegroundColorNow="white" EntryForegroundColor="#eeeeee" EntryForegroundColorSelected="white" EntryForegroundColorNow="white" EntryForegroundColorNowSelected="white" RecordForegroundColor="#eeeeee" RecordForegroundColorSelected="white" ZapForegroundColor="#eeeeee" ZapForegroundColorSelected="white" ServiceBackgroundColor="mid" ServiceBackgroundColorNow="select-darkblue-bg" EntryBackgroundColor="epg" EntryBackgroundColorSelected="epg-selected" EntryBackgroundColorNow="epg-now" EntryBackgroundColorNowSelected="epg-selected" RecordBackgroundColor="red" RecordBackgroundColorSelected="epg-selected" ZapBackgroundColor="zapgreen" ZapBackgroundColorSelected="epg-selected" ServiceBorderColor="#336498" ServiceBorderWidth="1" ServiceNamePadding="15" EntryBorderColor="#336498" EventBorderWidth="1" EventNamePadding="15" NumberOfRows="18" transparent="1"/>
-		<widget name="bouquetlist" position="0,53" size="1920,966" font="Regular;33" itemHeight="63" foregroundColor="white" foregroundColorSelected="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" transparent="0" borderColor="#003473" borderWidth="0" scrollbarMode="showNever" zPosition="6"/>
+		<widget name="timeline_now" position="1,48" size="23,972" pixmap="epg/timeline-now3.png" alphatest="blend" zPosition="4"/>
+		<widget name="lab1" position="0,48" size="1920,972" font="Regular;33" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="mid" transparent="1"/>
+		<widget name="list" position="0,48" size="1920,972" backgroundColor="mid" ServiceFontGraphical="Regular;33" EntryFontGraphical="Regular;33" ServiceForegroundColor="#eeeeee" ServiceForegroundColorNow="white" EntryForegroundColor="#eeeeee" EntryForegroundColorSelected="white" EntryForegroundColorNow="white" EntryForegroundColorNowSelected="white" RecordForegroundColor="#eeeeee" RecordForegroundColorSelected="white" ZapForegroundColor="#eeeeee" ZapForegroundColorSelected="white" ServiceBackgroundColor="mid" ServiceBackgroundColorNow="select-darkblue-bg" EntryBackgroundColor="epg" EntryBackgroundColorSelected="epg-selected" EntryBackgroundColorNow="epg-now" EntryBackgroundColorNowSelected="epg-selected" RecordBackgroundColor="red" RecordBackgroundColorSelected="epg-selected" ZapBackgroundColor="zapgreen" ZapBackgroundColorSelected="epg-selected" ServiceBorderColor="#336498" ServiceBorderWidth="1" ServiceNamePadding="15" EntryBorderColor="#336498" EventBorderWidth="1" EventNamePadding="15" NumberOfRows="18" transparent="1"/>
+		<widget name="bouquetlist" position="0,53" size="1920,972" font="Regular;33" itemHeight="54" foregroundColor="white" foregroundColorSelected="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" transparent="0" borderColor="#003473" borderWidth="0" scrollbarMode="showNever" zPosition="6"/>
 		<applet type="onLayoutFinish">self["bouquetlist"].bouquetNamePadding = 18</applet>
 		<ePixmap pixmap="q-backgrounds/button-bg.png" position="0,1018" size="491,62" alphatest="blend"/>
 		<widget source="global.CurrentTime" render="Label" position="0,1030" size="490,38" font="Regular;30" foregroundColor="white" backgroundColor="topleft" valign="center" halign="center" transparent="1" zPosition="2">
@@ -137,9 +137,7 @@
 		</widget>
 		<ePixmap pixmap="epg/TimeLineBG2.png" position="0,275" size="1920,55" zPosition="1" alphatest="blend"/>
 		<ePixmap pixmap="epg/TimeLineBG2.png" position="0,330" size="1920,55" zPosition="1" alphatest="blend"/>
-		
-		<widget source="Title" render="Label" position="12,275" size="466,54" font="Regular;27" halign="left" valign="center" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
-		
+		<widget source="Title" render="Label" position="501,275" size="1429,54" font="Bold;33" halign="left" valign="center" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
 		<widget name="timeline_text" position="12,333" size="1909,36" TimelineFont="Bold;33" foregroundColor="white" backgroundColor="mid" borderWidth="0" transparent="1" itemHeight="36" zPosition="2"/>
 		<widget name="timeline_now" position="0,385" size="23,633" pixmap="epg/timeline-now.png" alphatest="blend" zPosition="4"/>
 		<widget name="lab1" position="490,385" size="1430,633" font="Regular;33" halign="center" valign="center" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
@@ -159,7 +157,7 @@
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap position="0,705" size="1920,375" pixmap="q-infobars/infobar-epg.png" alphatest="blend" zPosition="-1"/>
-		<widget source="Title" render="Label" position="12,678" size="466,54" font="Regular;27" halign="left" valign="center" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
+		<widget source="Title" render="Label" position="12,678" size="1896,54" font="Bold;33" halign="left" valign="center" foregroundColor="white" backgroundColor="mid" transparent="1" zPosition="2"/>
 		<widget render="Pixmap" pixmap="q-icons/record.png" source="session.RecordState" position="945,717" size="30,30" alphatest="blend" zPosition="6">
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -258,9 +256,9 @@
 		<panel name="MenuButton"/>
 		<panel name="InfoButton-pos2"/>
 		<applet type="onLayoutFinish">from enigma import eListboxPythonMultiContent, gFont
-self["list"].l.setFont(0, gFont("Regular", 30))	
-self["list"].l.setFont(1, gFont("Regular", 30))	
-self["list"].l.setItemHeight(45)	
+self["list"].l.setFont(0, gFont("Regular", 30))
+self["list"].l.setFont(1, gFont("Regular", 30))
+self["list"].l.setItemHeight(45)
 self["bouquetlist"].bouquetNamePadding = 15</applet>
 	</screen>
 	<screen name="EPGverticalPIG" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder" title="Vertical Program Guide">
