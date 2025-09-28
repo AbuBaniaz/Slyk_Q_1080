@@ -580,12 +580,12 @@ self["list"].l.setFont(1, gFont("Regular", 33))
 		<panel name="OKButton"/>
 		<panel name="introduction"/>
 	</screen>
-<!-- LocaleSelection.py -->
-<screen name="LocaleSelection" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
-	<panel name="template1"/>
-	<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
-	<widget source="locales" render="Listbox" position="540,385" size="1332,624" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="2">
-		<convert type="TemplatedMultiContent">
+	<!-- LocaleSelection.py -->
+	<screen name="LocaleSelection" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
+		<panel name="template1"/>
+		<ePixmap pixmap="q-backgrounds/setup-bg.png" alphatest="blend" position="540,384" size="1002,623" zPosition="1"/>
+		<widget source="locales" render="Listbox" position="540,385" size="1332,624" foregroundColor="white" backgroundColor="mid" backgroundColorSelected="select-darkblue-bg" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="2">
+			<convert type="TemplatedMultiContent">
 				{
 				"template":
 					[
@@ -599,13 +599,13 @@ self["list"].l.setFont(1, gFont("Regular", 33))
 				"itemHeight": 78
 				}
 			</convert>
-	</widget>
-	<widget source="description" render="Label" position="540,140" size="1002,195" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
-	<ePixmap pixmap="buttons/key_help.png" position="1793,1030" size="38,38" alphatest="blend"/>
-	<panel name="MenuButton"/>
-	<widget name="icons" position="0,0" size="45,40" pixmaps="skin_default/icons/menu_download.png,skin_default/icons/menu_off.png,skin_default/icons/menu_on.png" alphatest="blend" scale="1"/>
-	<panel name="New-Buttons"/>
-</screen>
+		</widget>
+		<widget source="description" render="Label" position="540,140" size="1002,195" font="Regular;33" foregroundColor="white" backgroundColor="topmid" transparent="1"/>
+		<ePixmap pixmap="buttons/key_help.png" position="1793,1030" size="38,38" alphatest="blend"/>
+		<panel name="MenuButton"/>
+		<widget name="icons" position="0,0" size="45,40" pixmaps="skin_default/icons/menu_download.png,skin_default/icons/menu_off.png,skin_default/icons/menu_on.png" alphatest="blend" scale="1"/>
+		<panel name="New-Buttons"/>
+	</screen>
 	<!-- LocationBox.py -->
 	<screen name="LocationBox" position="0,0" size="1920,1080" title="Location Box" flags="wfNoBorder" backgroundColor="mid">
 		<panel name="template1"/>
@@ -642,60 +642,94 @@ self["list"].l.setFont(1, gFont("Regular", 33))
 		<panel name="New-Buttons"/>
 	</screen>
 	<!-- MessageBox.py -->
-	<screen name="MessageBox" position="center,center" size="960,225">
+	<screen name="MessageBox" position="center,center" size="1200,600">
 		<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="15,0" size="53,53" alphatest="blend"/>
 		<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="15,0" size="53,53" alphatest="blend"/>
 		<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="15,0" size="53,53" alphatest="blend"/>
 		<widget name="icon" conditional="icon" position="15,0" size="53,53" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_info.png,icons/input_error.png,icons/input_info.png" alphatest="blend" scale="1"/>
-		<widget name="text" position="0,10" size="500,0" font="Regular;33" transparent="1"/>
-		<widget name="list" position="0,90" size="500,0" conditional="list" enableWrapAround="1" font="Regular;33" textOffset="15,3" backgroundColor="messageboxbg" transparent="1" itemHeight="45" scrollbarMode="showOnDemand"/>
+		<widget name="text" position="98,0" size="1800,0" font="Regular;33" transparent="1"/>
+		<widget name="list" position="0,0" size="1800,0" conditional="list" enableWrapAround="1" font="Regular;33" textOffset="15,21" backgroundColor="messageboxbg" transparent="1" itemHeight="78" scrollbarMode="showOnDemand"/>
 		<applet type="onLayoutFinish">
-from enigma import getDesktop, eSize, ePoint
-desktop_w = getDesktop(0).size().width()
-desktop_h = getDesktop(0).size().height()
-listcount = 0
-iconsize = 53
-itemheight = 45
-padding = 45
-minheight = iconsize
-maxwidth = desktop_w - 120
-minwidth = desktop_w // 2
+from __future__ import division
+from enigma import eSize, ePoint, getDesktop
 
-textwidth = self["text"].instance.size().width()
-width_all = textwidth + iconsize + padding
+# Offsets and minimums
+offset_listposx = 15
+offset_listwidth = 15
+offset_listheight = 78
+offset_textwidth = 98
+offset_textheight = 45
+min_width = 960
+min_height = 75
+offset = 45
 
-if width_all &gt; maxwidth:
-	textwidth = maxwidth - iconsize - (padding * 2)
-	
-if width_all &lt; minwidth:
-	textwidth = minwidth - iconsize - (padding * 2)
-listwidth = textwidth
+# Desktop size
+deskwidth = getDesktop(0).size().width()
+deskheight = getDesktop(0).size().height()
 
-if not self["text"].text:
-	textsize = (textwidth, 0)
+# Text widget size
+
+textsize = self["text"].getSize()
+textwidth = textsize[0] + offset_textwidth
+textheight = textsize[1] + offset_textheight
+
+textwidth = max(textwidth, min_width)
+textheight = max(textheight, min_height)
+
+# List widget size
+listwidth = 0
+listheight = 0
+if self.list:
+    try:
+        longest_item = max(len(i[0]) for i in self.list)
+        listwidth = longest_item * offset_listwidth
+        listheight = len(self.list) * offset_listheight
+    except Exception as e:
+        print("*** list size error ***", e)
+
+# Constrain list height
+maxheight = int(deskheight * 0.75) - textheight - (offset_textheight * 2)
+if listheight &gt; maxheight:
+    listheight = maxheight
+
+# Window width
+if textwidth &gt; listwidth:
+    wsizex = textwidth + (offset_listposx * 2)
 else:
-	textsizeoriginal = self["text"].getSize()
-	textsize = (textwidth, textsizeoriginal[1])
-	minheight = max(iconsize, textsize[1])
+    textwidth = listwidth
+    wsizex = listwidth + (offset_listposx * 2)
 
-if self["list"] and self.list is not None:
-	listcount = len(self.list)
-	minheight = max(iconsize, textsize[1]) + (itemheight * listcount)
+# Window height
+wsizey = textheight + listheight
 
-listsize = (textwidth, itemheight * listcount)
+# Ensure not wider than screen
+if wsizex &gt; deskwidth:
+    textwidth = 1800
+    listwidth = 1800
 
-self["text"].instance.resize(eSize(*textsize))
-self["list"].instance.resize(eSize(*listsize))
-self["text"].instance.move(ePoint(iconsize + padding, 0))
-self["list"].instance.move(ePoint(iconsize + padding, textsize[1]+60))
-
-wsizex = listwidth + iconsize + (padding * 2)
-wsizey = textsize[1] + listsize[1] + 90
-if wsizey &lt; minheight:
-	wsizey = minheight
+# Apply window size
 wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
-self.instance.move(ePoint((desktop_w - wsizex) // 2, (desktop_h - wsizey) // 2))</applet>
+
+# Resize text widget
+self["text"].instance.resize(eSize(textwidth, textheight))
+
+# Move and resize list widget
+if self.list:
+    text_pos = self["text"].getPosition()
+    text_size = self["text"].getSize()
+    new_y = text_pos[1] + text_size[1] + offset
+    listsize = (wsizex - (offset_listposx * 2), listheight)
+    self["list"].instance.move(ePoint(offset_listposx, new_y))
+    self["list"].instance.resize(eSize(*listsize))
+
+# Center window
+newwidth = wsize[0]
+newheight = wsize[1]
+self.instance.move(ePoint(int((deskwidth - newwidth) // 2), int((deskheight - newheight) // 2)
+))
+
+</applet>
 	</screen>
 	<screen name="MessageBoxSimple" position="center,center" size="1002,15" title="Message" backgroundColor="messageboxbg">
 		<panel name="MessageBox"/>

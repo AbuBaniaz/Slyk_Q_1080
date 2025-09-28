@@ -516,7 +516,7 @@
     <screen name="EPGImportProfile" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
         <panel name="Setup-Default"/>
     </screen>
-    <screen name="EPGImportLog" position="0,0" size="1920,977" flags="wfNoBorder" backgroundColor="mid">
+    <screen name="EPGImportLog" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="mid">
         <panel name="template1"/>
         <eLabel position="491,0" size="1430,1025" backgroundColor="black" transparent="0" zPosition="-1"/>
         <widget name="list" position="540,42" size="1335,980" font="Console;24" foregroundColor="white" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="3"/>
