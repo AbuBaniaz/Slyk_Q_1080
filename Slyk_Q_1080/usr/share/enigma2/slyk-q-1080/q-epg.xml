@@ -405,7 +405,7 @@ self["bouquetlist"].bouquetNamePadding = 15</applet>
 	</screen>
 	<!-- epg - show bouquet on launch -->
 	<screen name="BouquetSelector" title="Select a bouquet" position="0,0" size="1920,1080" backgroundColor="mid" flags="wfNoBorder">
-		<ePixmap pixmap="q-toppicks/hero.jpg" position="0,0" size="1920,1080" zPosition="-1"/>
+		<ePixmap pixmap="q-toppicks/hero.png" alphatest="blend" position="0,0" size="1920,1080" zPosition="-1"/>
 		<panel name="logo"/>
 		<panel name="time"/>
 		<panel name="tv"/>
